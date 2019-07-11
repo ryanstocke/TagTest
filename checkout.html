@@ -14,7 +14,59 @@
 </head>
 
 <body>
-
+        <script type="text/javascript">
+            var utag_data = {
+              product_id : "", // Contains product ID(s) - multiple values should be comma-separated.
+              product_sku : "", // Contains product SKU(s) - multiple values should be comma-separated.
+              product_name : "", // Contains product name(s) - multiple values should be comma-separated.
+              product_brand : "", // Contains product brand(s) - multiple values should be comma-separated.
+              product_category : "", // Contains product category(s) - multiple values should be comma-separated.
+              product_subcategory : "", // Contains product subcategory(s) - multiple values should be comma-separated.
+              product_unit_price : "", // Contains product unit price(s) - multiple values should be comma-separated.
+              product_list_price : "", // Contains product list price(s) before discount - multiple values should be comma-separated.
+              product_quantity : "", // Contains product quantity(s) - multiple values should be comma-separated.
+              product_discount : "", // Contains product discount(s) - multiple values should be comma-separated.
+              order_id : "", // Contains the order or transaction ID.
+              order_total : "", // Contains the order total value.
+              order_subtotal : "", // Contains the order subtotal (not containing taxes &amp; shipping).
+              order_payment_type : "", // Contains the order payment type.
+              order_discount : "", // Contains the order discount (if any).
+              order_shipping : "", // Contains the order shipping value.
+              order_tax : "", // Contains the order tax amount.
+              order_currency : "", // Contains the currency associated with the transaction, e.g. 'USD'.
+              order_coupon_code : "", // Contains the order coupon code.
+              order_coupon_discount : "", // Contains the order coupon discount.
+              order_store : "", // Contains identification information for a store.
+              order_type : "", // Contains type of order/cart.
+              customer_id : "", // Contains the customer ID.
+              customer_city : "", // Contains the customer city.
+              customer_state : "", // Contains the customer state.
+              customer_zip : "", // Contains the customer zip/postal code.
+              customer_country : "", // Contains the customer country.
+              customer_email : "", // Contains the customer email.
+              customer_type : "", // Contains the customer type.
+              event_type : "", // Contains the event type, e.g. link click', 'button click').
+              event_target : "", // Contains the name associated with an interactive element (link, button, etc).
+              event_attr1 : "", // Contains custom attribute 1 associated with an event.
+              event_attr2 : "", // Contains custom attribute 2 associated with an event.
+              event_attr3 : "", // Contains custom attribute 3 associated with an event.
+              event_attr4 : "", // Contains custom attribute 4 associated with an event.
+              event_name : "", // Tealium variable to identify unique events eg. social_share, user_login, etc.
+              tealium_event : "", // Identifies the unique names of tracked events.
+              page_type : "checkout" // Tealium variable to identify page types/templates eg. home, category, search, product, etc.
+            }
+            </script>
+            
+            <!-- Loading script asynchronously -->
+            <script type="text/javascript">
+                (function(a,b,c,d){
+                a='//tags.tiqcdn.com/utag/services-ryan-stocke/main/prod/utag.js';
+                b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+                a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+                })();
+            </script>
+            
+                
     <div class="container">
         <div class="jumbotron">
             <a href="/">
@@ -32,27 +84,27 @@
                     <div class="card-body">
                         <a href="/product">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Products</button>
-                                </a>
+                                <span class="fa fa-eye"></span>Products</button>
+                        </a>
                         <a href="/search">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Search</button>
+                                <span class="fa fa-eye"></span>Search</button>
                         </a>
                         <a href="/account">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Account</button>
+                                <span class="fa fa-eye"></span>Account</button>
                         </a>
                         <a href="/cart">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Cart</button>
+                                <span class="fa fa-eye"></span>Cart</button>
                         </a>
                         <a href="/checkout">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Checkout</button>
+                                <span class="fa fa-eye"></span>Checkout</button>
                         </a>
                         <a href="/order">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Order</button>
+                                <span class="fa fa-eye"></span>Order</button>
                         </a>
                     </div>
                 </div>

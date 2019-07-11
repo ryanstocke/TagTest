@@ -14,7 +14,30 @@
 </head>
 
 <body>
-
+        <script type="text/javascript">
+            var utag_data = {
+              product_id : ["TMMY_BHMA_SH_001","TMMY_BHMA_SH_002","TMMY_BHMA_SH_003"], // Contains product ID(s) - multiple values should be comma-separated.
+              product_name : ["Flower Shirt 001","Flower Shirt 002","Flower Shirt 003"], // Contains product name(s) - multiple values should be comma-separated.
+              product_category : "Goofy Men's Shirts", // Contains product category(s) - multiple values should be comma-separated.
+              product_subcategory : "Goofy", // Contains product subcategory(s) - multiple values should be comma-separated.
+              product_unit_price : "35,35,35", // Contains product unit price(s) - multiple values should be comma-separated.
+              product_quantity : "1,1,1", // Contains product quantity(s) - multiple values should be comma-separated.
+              order_total : "105", // Contains the order total value.
+              tealium_event : "cart_view", // Identifies the unique names of tracked events.
+              page_type : "cart" // Tealium variable to identify page types/templates eg. home, category, search, product, etc.
+            }
+            </script>
+            
+            <!-- Loading script asynchronously -->
+            <script type="text/javascript">
+                (function(a,b,c,d){
+                a='//tags.tiqcdn.com/utag/services-ryan-stocke/main/prod/utag.js';
+                b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+                a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+                })();
+            </script>
+            
+                
     <div class="container">
         <div class="jumbotron">
             <a href="/">
@@ -32,27 +55,27 @@
                     <div class="card-body">
                         <a href="/product">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Products</button>
-                                </a>
+                                <span class="fa fa-eye"></span>Products</button>
+                        </a>
                         <a href="/search">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Search</button>
+                                <span class="fa fa-eye"></span>Search</button>
                         </a>
                         <a href="/account">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Account</button>
+                                <span class="fa fa-eye"></span>Account</button>
                         </a>
                         <a href="/cart">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Cart</button>
+                                <span class="fa fa-eye"></span>Cart</button>
                         </a>
                         <a href="/checkout">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Checkout</button>
+                                <span class="fa fa-eye"></span>Checkout</button>
                         </a>
                         <a href="/order">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Order</button>
+                                <span class="fa fa-eye"></span>Order</button>
                         </a>
                     </div>
                 </div>

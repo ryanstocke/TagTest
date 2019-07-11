@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ryan's tag tester</title>
+    <title>Products</title>
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,7 +14,28 @@
 </head>
 
 <body>
-
+        <script type="text/javascript">
+            var utag_data = {
+              product_id : ["TMMY_BHMA_SH_001"], // Contains product ID(s) - multiple values should be comma-separated.
+              product_name : "Flower Shirt 001", // Contains product name(s) - multiple values should be comma-separated.
+              product_category : "Goofy Men's Shirts", // Contains product category(s) - multiple values should be comma-separated.
+              product_subcategory : "Goofy", // Contains product subcategory(s) - multiple values should be comma-separated.
+              product_unit_price : "35.00", // Contains product unit price(s) - multiple values should be comma-separated.
+              tealium_event : "product_view", // Identifies the unique names of tracked events.
+              page_type : "product" // Tealium variable to identify page types/templates eg. home, category, search, product, etc.
+            }
+            </script>
+            
+            <!-- Loading script asynchronously -->
+            <script type="text/javascript">
+                (function(a,b,c,d){
+                a='//tags.tiqcdn.com/utag/services-ryan-stocke/main/prod/utag.js';
+                b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+                a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+                })();
+            </script>
+            
+                
     <div class="container">
         <div class="jumbotron">
             <a href="/">
@@ -32,27 +53,27 @@
                     <div class="card-body">
                         <a href="/product">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Products</button>
-                                </a>
+                                <span class="fa fa-eye"></span>Products</button>
+                        </a>
                         <a href="/search">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Search</button>
+                                <span class="fa fa-eye"></span>Search</button>
                         </a>
                         <a href="/account">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Account</button>
+                                <span class="fa fa-eye"></span>Account</button>
                         </a>
                         <a href="/cart">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Cart</button>
+                                <span class="fa fa-eye"></span>Cart</button>
                         </a>
                         <a href="/checkout">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Checkout</button>
+                                <span class="fa fa-eye"></span>Checkout</button>
                         </a>
                         <a href="/order">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Order</button>
+                                <span class="fa fa-eye"></span>Order</button>
                         </a>
                     </div>
                 </div>

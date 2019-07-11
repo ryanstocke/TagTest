@@ -14,7 +14,27 @@
 </head>
 
 <body>
+    <script type="text/javascript">
+        var utag_data = {
+            tealium_event: "account_page", // Identifies the unique names of tracked events.
+            customer_id: "001", // Contains the customer ID.
+            customer_city: "Dana Point", // Contains the customer city.
+            customer_state: "CA", // Contains the customer state.
+            customer_zip: "92629", // Contains the customer zip/postal code.
+            customer_country: "USA", // Contains the customer country.
+            customer_email: "test@test.com", // Contains the customer email.
+            page_type: "account_view" // Tealium variable to identify page types/templates eg. home, category, search, product, etc.
+        }
+    </script>
 
+    <!-- Loading script asynchronously -->
+    <script type="text/javascript">
+            (function (a, b, c, d) {
+                a = '//tags.tiqcdn.com/utag/services-ryan-stocke/main/prod/utag.js';
+                b = document; c = 'script'; d = b.createElement(c); d.src = a; d.type = 'text/java' + c; d.async = true;
+                a = b.getElementsByTagName(c)[0]; a.parentNode.insertBefore(d, a);
+            })();
+    </script>
     <div class="container">
         <div class="jumbotron">
             <a href="/">
@@ -32,34 +52,44 @@
                     <div class="card-body">
                         <a href="/product">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Products</button>
-                                </a>
+                                <span class="fa fa-eye"></span>Products</button>
+                        </a>
                         <a href="/search">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Search</button>
+                                <span class="fa fa-eye"></span>Search</button>
                         </a>
                         <a href="/account">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Account</button>
+                                <span class="fa fa-eye"></span>Account</button>
                         </a>
                         <a href="/cart">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Cart</button>
+                                <span class="fa fa-eye"></span>Cart</button>
                         </a>
                         <a href="/checkout">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Checkout</button>
+                                <span class="fa fa-eye"></span>Checkout</button>
                         </a>
                         <a href="/order">
                             <button class="btn btn-danger btn-lg">
-                                    <span class="fa fa-eye"></span>Order</button>
+                                <span class="fa fa-eye"></span>Order</button>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="card">
+            <div class="card-header">
+                <h3><strong>Account Info</strong></h3>
+            </div>
+            <div class="card-body">
+                <h2 id="name">Your Info:</h2>
+                <div id="stats">
+                    <h3><strong>Name:</strong> <span id="accountName">Test</span></h3>
 
-    </div>
+                </div>
+            </div>
+        </div>
 
 </body>
 
